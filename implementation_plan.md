@@ -1,3 +1,4 @@
+
 stepauth/
 ├── pubspec.yaml
 ├── android/
@@ -5,8 +6,8 @@ stepauth/
 ├── ios/
 │   └── GoogleService-Info.plist  (placeholder note)
 └── lib/
-    ├── main.dart                         # Firebase init + ProviderScope
-    ├── firebase_options.dart             # FlutterFire CLI generated stub
+    ├── main.dart                        
+    ├── firebase_options.dart             
     │
     ├── core/
     │   ├── constants/app_constants.dart
@@ -14,10 +15,10 @@ stepauth/
     │
     ├── data/
     │   └── repositories/
-    │       └── auth_repository.dart      # AuthRepository impl
+    │       └── auth_repository.dart      
     │
     ├── domain/
-    │   ├── entities/user_profile.dart    # UserProfile model
+    │   ├── entities/user_profile.dart    
     │   └── usecases/
     │       ├── sign_in_google.dart
     │       ├── sign_in_apple.dart
@@ -27,10 +28,10 @@ stepauth/
     │
     └── presentation/
         ├── providers/
-        │   ├── auth_provider.dart        # StreamProvider<User?>
-        │   └── profile_provider.dart     # StateNotifier for profile
+        │   ├── auth_provider.dart        
+        │   └── profile_provider.dart     
         ├── screens/
-        │   ├── auth_gate.dart            # Routing widget
+        │   ├── auth_gate.dart            
         │   ├── onboarding/
         │   │   ├── welcome_screen.dart
         │   │   ├── login_screen.dart
@@ -42,3 +43,4 @@ stepauth/
         └── widgets/
             ├── social_auth_button.dart
             └── loading_overlay.dart
+
