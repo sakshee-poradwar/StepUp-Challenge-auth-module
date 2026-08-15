@@ -1,6 +1,3 @@
-Flutter Auth Module — Step Tracking App
-Project Structure
-```
 stepauth/
 ├── pubspec.yaml
 ├── android/
@@ -45,4 +42,3 @@ stepauth/
         └── widgets/
             ├── social_auth_button.dart
             └── loading_overlay.dart
-```
