@@ -1,36 +1,27 @@
-// ============================================================
-// core/theme/app_theme.dart — Dark Glassmorphism Design System
-// ============================================================
-//
-// INTEGRATION — Member 5 (UX/Design):
-//   All design tokens are defined here. Expand this file to add
-//   new color roles, text styles, and component themes.
-//   The primary gradient and glass card styles are reused across
-//   screens — do not override inline.
-// ============================================================
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   AppTheme._();
-  // ── Color Palette ─────────────────────────────────────────
-  static const Color primary = Color(0xFF6C63FF);      // Indigo-violet
+  
+  static const Color primary = Color(0xFF6C63FF);      
   static const Color primaryLight = Color(0xFF9D97FF);
   static const Color primaryDark = Color(0xFF4B44CC);
-  static const Color accent = Color(0xFF00D4AA);       // Mint-teal
+  static const Color accent = Color(0xFF00D4AA);       
   static const Color accentLight = Color(0xFF4FFFD6);
   static const Color error = Color(0xFFFF4D6A);
   static const Color warning = Color(0xFFFFB347);
   static const Color success = Color(0xFF4CAF82);
-  static const Color surface = Color(0xFF1A1A2E);      // Deep navy
+  static const Color surface = Color(0xFF1A1A2E);      
   static const Color surfaceVariant = Color(0xFF16213E);
-  static const Color background = Color(0xFF0F0F23);   // Near-black navy
+  static const Color background = Color(0xFF0F0F23);   
   static const Color onSurface = Color(0xFFE8E8F0);
   static const Color onSurfaceMuted = Color(0xFF8A8AA0);
   static const Color divider = Color(0xFF2A2A45);
-  // ── Glass Surface ─────────────────────────────────────────
-  static const Color glassWhite = Color(0x1AFFFFFF);   // 10% white
-  static const Color glassBorder = Color(0x33FFFFFF);  // 20% white
-  // ── Gradients ─────────────────────────────────────────────
+  
+  static const Color glassWhite = Color(0x1AFFFFFF);   
+  static const Color glassBorder = Color(0x33FFFFFF); 
+  
   static const LinearGradient primaryGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
@@ -46,7 +37,7 @@ class AppTheme {
     end: Alignment.bottomRight,
     colors: [accent, Color(0xFF00A8CC)],
   );
-  // ── Typography ────────────────────────────────────────────
+  
   static TextTheme _buildTextTheme() {
     final base = GoogleFonts.interTextTheme();
     return base.copyWith(
@@ -102,7 +93,7 @@ class AppTheme {
       ),
     );
   }
-  // ── Input Decoration ──────────────────────────────────────
+  
   static InputDecorationTheme _inputDecorationTheme() {
     return InputDecorationTheme(
       filled: true,
@@ -130,7 +121,7 @@ class AppTheme {
       suffixIconColor: onSurfaceMuted,
     );
   }
-  // ── ElevatedButton ────────────────────────────────────────
+ 
   static ElevatedButtonThemeData _elevatedButtonTheme() {
     return ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -150,7 +141,7 @@ class AppTheme {
       ),
     );
   }
-  // ── ThemeData ─────────────────────────────────────────────
+  
   static ThemeData dark() {
     return ThemeData(
       useMaterial3: true,
@@ -204,7 +195,7 @@ class AppTheme {
     );
   }
 }
-// ── Glass Card Decoration (reusable) ─────────────────────────
+
 BoxDecoration glassDecoration({
   double borderRadius = 20,
   Color? color,
