@@ -1,4 +1,3 @@
-data/repositories/auth_repository.dart
 import 'dart:convert';
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -10,7 +9,7 @@ import 'package:platform/platform.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:stepauth/core/constants/app_constants.dart';
 import 'package:stepauth/domain/entities/user_profile.dart';
-/// Custom exception for auth failures with user-readable messages.
+
 class AuthException implements Exception {
   const AuthException(this.message, {this.code});
   final String message;
