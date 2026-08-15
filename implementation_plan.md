@@ -1,4 +1,6 @@
-
+# Flutter Auth Module — Step Tracking App
+## Project Structure
+```
 stepauth/
 ├── pubspec.yaml
 ├── android/
@@ -6,8 +8,8 @@ stepauth/
 ├── ios/
 │   └── GoogleService-Info.plist  (placeholder note)
 └── lib/
-    ├── main.dart                        
-    ├── firebase_options.dart             
+    ├── main.dart                         # Firebase init + ProviderScope
+    ├── firebase_options.dart             # FlutterFire CLI generated stub
     │
     ├── core/
     │   ├── constants/app_constants.dart
@@ -15,10 +17,10 @@ stepauth/
     │
     ├── data/
     │   └── repositories/
-    │       └── auth_repository.dart      
+    │       └── auth_repository.dart      # AuthRepository impl
     │
     ├── domain/
-    │   ├── entities/user_profile.dart    
+    │   ├── entities/user_profile.dart    # UserProfile model
     │   └── usecases/
     │       ├── sign_in_google.dart
     │       ├── sign_in_apple.dart
@@ -28,10 +30,10 @@ stepauth/
     │
     └── presentation/
         ├── providers/
-        │   ├── auth_provider.dart        
-        │   └── profile_provider.dart     
+        │   ├── auth_provider.dart        # StreamProvider<User?>
+        │   └── profile_provider.dart     # StateNotifier for profile
         ├── screens/
-        │   ├── auth_gate.dart            
+        │   ├── auth_gate.dart            # Routing widget
         │   ├── onboarding/
         │   │   ├── welcome_screen.dart
         │   │   ├── login_screen.dart
@@ -43,4 +45,4 @@ stepauth/
         └── widgets/
             ├── social_auth_button.dart
             └── loading_overlay.dart
-
+```
